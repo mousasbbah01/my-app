@@ -1,42 +1,30 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import Home from './view/home';
+import Destination from './view/destination';
+import Crew from './view/crew';
+import Technology from './view/technology';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
-
-
+const images = ['images', 'i', 'b', 'c']
 class App extends React.Component {
+
   render() {
     return <>
-    <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-    </div>
-
-    <Router>
+      <BrowserRouter>
         <Routes>
-          <Route path="/about" element = {<p>s</p>}>
-          </Route>
-          <Route path="/users" element = {<p>a</p>}>
-          </Route>
-          <Route path="/" element = {<p>a</p>}>
-          </Route>
+          <Route element={<Home />} path="/" />
+          <Route element={<Destination />} path="/destination" />
+          <Route element={<Crew />} path="/crew" />
+          <Route element={<Technology />} path="/technology" />
         </Routes>
-    </Router>
+      </BrowserRouter>
+
     </>
-    ;
+      ;
   }
 }
 
