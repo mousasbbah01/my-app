@@ -1,7 +1,60 @@
-.destination_container { 
-    background-image: url('https://space-tourism-multi-page-solution.netlify.app/images/468b922c69bf5499b4bc.jpg'); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.destination_container {
+  background-image: url('https://space-tourism-multi-page-solution.netlify.app/images/468b922c69bf5499b4bc.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+main.destination{
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  width: 100%;
+  padding: 136px 0 0 0;
+
+  .planet_information{
+    max-width: 445px;
+
+    h1.name{
+      margin-top: 37px;
+      font-family: var(--bellefair--fnt);
+      font-size: 100px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--light--clr);
+    }
+    p.description{
+      margin-top: 14px;
+    padding: 0 0 54px 0;
+    border-bottom: 1px solid #fff;
+    font-family: var(--barlow--fnt);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--fog--clr);
+    }
+
+    .destination_options {
+      display: flex;
+      align-items: center;
+        grid-gap: 35px;
+        gap: 35px;
+        list-style: none;
+        label {
+          position: relative;
+          padding: 0 0 14px 0;
+          cursor: pointer;
+          
+            font-family: var(--barlow-condensed--fnt);
+            font-size: 16px;
+            letter-spacing: 2.7px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--light--clr);
+        
+      }
   }
+}
+
+}

@@ -1,7 +1,67 @@
-.home_container { 
-    background-image: url('https://space-tourism-multi-page-solution.netlify.app/images/cdf3864ecbfdf20e8c3b.jpg'); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.home_container {
+  background-image: url('https://space-tourism-multi-page-solution.netlify.app/images/cdf3864ecbfdf20e8c3b.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main.home_container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15%;
+  min-height: 100vh;
+  width: 100%;
+
+  .left {
+    max-width: 450px;
+    h1.heading {
+      display: block;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 28px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      letter-spacing: 4.75px;
+      color: hsl(231, 77%, 90%);
+      font-weight: bold;
+    }
+  
+    h2.space_word {
+      display: block;
+      font-family: "Bellefair", serif;
+      font-size: 150px;
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+  
+    }
+    p.greeting{
+      font-family: "Barlow", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      color: hsl(231, 77%, 90%);
+    }
   }
+
+  .right{
+    position: relative;
+    width: 274px;
+    height: 274px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    a{
+      color: var(--dark--clr);
+      font-family: "Bellefair", serif;
+      font-size: 32px;
+      letter-spacing: 2px;
+      text-decoration: none;
+      z-index: 100;
+    }
+  }
+
+}

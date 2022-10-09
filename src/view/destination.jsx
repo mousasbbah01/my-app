@@ -23,13 +23,13 @@ class Destination extends React.Component {
 
             <Header />
             <main className="destination">
-                <div>
+                <div className="image_container">
 
-                    <img src={this.state.data.imgURL}></img>
+                    <img alt='planet' src={this.state.data.imgURL}></img>
                 </div>
 
-                <div>
-                    <div onChange={this.onChangeValue} name='planet'>
+                <div className="planet_information">
+                    <div onChange={this.onChangeValue} className='destination_options' name='planet'>
                         {destinationData.map((plant, idx) =>
                             <label>
                                 {plant.name}
@@ -37,11 +37,10 @@ class Destination extends React.Component {
                             </label>
                         )}
                     </div>
-                    <div>
+                    <div className="info">
 
-                        <div className="name">{this.state.data.name}</div>
-                        <div className="description">{this.state.data.description}</div>
-                        <div className="divider"></div>
+                        <h1 className="name">{this.state.data.name}</h1>
+                        <p className="description">{this.state.data.description}</p>
                         <div className="stats">
                             <div className="distance">{this.state.data.distance} {this.state.distanceUnit}</div>
                             <div className="travelTime">{this.state.data.travelTime}</div>

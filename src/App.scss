@@ -2,8 +2,20 @@
 
 
 *{
-  box-sizing: border-box;
+  box-sizing: inherit;;
 
+}
+:root {
+  --bellefair--fnt: "Bellefair", serif;
+  --barlow-condensed--fnt: "Barlow Condensed", sans-serif;
+  --barlow--fnt: "Barlow", sans-serif;
+  --dark--clr: hsl(230, 35%, 7%);
+    --fog--clr: hsl(231, 77%, 90%);
+    --light--clr: hsl(0, 0%, 100%);
+    --half-transparent--clr: rgba(255, 255, 255, 0.5);
+}
+html{
+  font-size: 100%;
 }
 section{
   padding-top: 30px;
