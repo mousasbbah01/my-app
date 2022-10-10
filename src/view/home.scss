@@ -6,15 +6,15 @@
   background-size: cover;
 }
 
-main.home_container {
+section main {
   display: flex;
   justify-content: space-around;
   padding-top: 15%;
-  min-height: 100vh;
   width: 100%;
 
   .left {
     max-width: 450px;
+
     h1.heading {
       display: block;
       font-family: "Barlow Condensed", sans-serif;
@@ -25,16 +25,17 @@ main.home_container {
       color: hsl(231, 77%, 90%);
       font-weight: bold;
     }
-  
+
     h2.space_word {
       display: block;
       font-family: "Bellefair", serif;
       font-size: 150px;
       font-weight: 400;
       color: hsl(0, 0%, 100%);
-  
+
     }
-    p.greeting{
+
+    p.greeting {
       font-family: "Barlow", sans-serif;
       font-size: 18px;
       font-weight: 400;
@@ -43,7 +44,7 @@ main.home_container {
     }
   }
 
-  .right{
+  .right {
     position: relative;
     width: 274px;
     height: 274px;
@@ -54,7 +55,7 @@ main.home_container {
     justify-content: center;
     cursor: pointer;
 
-    a{
+    a {
       color: var(--dark--clr);
       font-family: "Bellefair", serif;
       font-size: 32px;

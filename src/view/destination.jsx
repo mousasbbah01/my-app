@@ -42,8 +42,18 @@ class Destination extends React.Component {
                         <h1 className="name">{this.state.data.name}</h1>
                         <p className="description">{this.state.data.description}</p>
                         <div className="stats">
-                            <div className="distance">{this.state.data.distance} {this.state.distanceUnit}</div>
-                            <div className="travelTime">{this.state.data.travelTime}</div>
+                            <div className="distance">
+                                
+                                <h5>AVG. DISTANCE</h5>
+                                <h6>{this.state.data.distance}</h6>
+                                </div>
+
+                                <div className="distance">
+                                
+                                <h5>EST. TRAVEL TIME</h5>
+                                <h6 className="travelTime">{this.state.data.travelTime}</h6>
+                                </div>
+
                         </div>
                     </div>
                 </div>

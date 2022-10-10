@@ -8,9 +8,8 @@
 main.destination{
   display: flex;
   justify-content: space-around;
-  min-height: 100vh;
   width: 100%;
-  padding: 136px 0 0 0;
+
 
   .planet_information{
     max-width: 445px;
@@ -55,6 +54,28 @@ main.destination{
         
       }
   }
+}
+
+.stats{
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  grid-gap: 80px;
+  gap: 80px;
+}
+h5{
+  font-family: var(--barlow-condensed--fnt);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.35px;
+    color: var(--fog--clr);
+}
+h6{
+  font-family: var(--bellefair--fnt);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--light--clr);
+  margin-top: 12px;
 }
 
 }

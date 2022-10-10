@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
 *{
@@ -19,7 +22,7 @@ html{
 }
 section{
   padding-top: 30px;
-  height: 100vh;
+  height: calc(100vh - 30px);
 }
 
 .container{
@@ -31,10 +34,6 @@ header{
   width: 100%;
   display: flex;
   align-items: center;
-
-  img{
-
-  }
 
   nav{
     margin-left: auto;
