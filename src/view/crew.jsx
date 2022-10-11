@@ -1,37 +1,30 @@
 import React from "react";
 import Header from "../components/header";
-import {crewData} from '../data/crew'
+import { crewData } from '../data/crew'
 import './crew.scss'
 
 class Crew extends React.Component {
 
-        constructor(props) {
-                super(props)
-                this.state = { data: crewData[0] };
-                this.onChangeValue = this.onChangeValue.bind(this);
-            }
-        
-            onChangeValue(value) {
-                console.log(value.target.value);
-                this.setState({ data: crewData[value.target.value] })
-            }
-        
-            render() {
-                return <>
-                <section className="crew_container">
-                        <div className="container">
+    constructor(props) {
+        super(props)
+        this.state = { data: crewData[0] };
+        this.onChangeValue = this.onChangeValue.bind(this);
+    }
+
+    onChangeValue(value) {
+        console.log(value.target.value);
+        this.setState({ data: crewData[value.target.value] })
+    }
+
+    render() {
+        return <>
+            <section className="crew_container">
+                <div className="container">
 
                     <Header />
                     <main className="crew">
-                        <div>
-        
-                            <img src={this.state.data.imgURL}></img>
-                        </div>
-        
-                        <div>
-
+                        <div className="ss">
                             <div>
-        
                                 <div className="title">{this.state.data.title}</div>
                                 <div className="name">{this.state.data.name}</div>
                                 <div className="bio">{this.state.data.bio}</div>
@@ -49,14 +42,17 @@ class Crew extends React.Component {
                                 )}
                             </div>
                         </div>
-                    </main>
+                        <div>
+                            <img alt={this.state.data.name} src={this.state.data.imgURL}></img>
                         </div>
+                    </main>
+                </div>
 
-                </section>
-        
-        
-                </>
-}
+            </section>
+
+
+        </>
+    }
 
 }
 

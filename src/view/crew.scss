@@ -4,4 +4,31 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+  }
+
+  main.crew{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .ss{
+      div{
+        padding: 0 0 120px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+
+  }
+
+  .crew img{
+      width: 568px;
+      height: 712px;
+      margin: 0 auto;
   }
