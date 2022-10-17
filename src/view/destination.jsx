@@ -22,13 +22,16 @@ class Destination extends React.Component {
             <div className="container">
 
             <Header />
+                <h2 className="subheading"> 01                     PICK YOUR DESTINATION </h2>
             <main className="destination">
                 <div className="image_container">
+
 
                     <img alt='planet' src={this.state.data.imgURL}></img>
                 </div>
 
                 <div className="planet_information">
+
                     <div onChange={this.onChangeValue} className='destination_options' name='planet'>
                         {destinationData.map((plant, idx) =>
                             <label>

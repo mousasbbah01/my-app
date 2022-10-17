@@ -9,18 +9,39 @@
 
   main.crew{
     position: relative;
-    min-height: 100vh;
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    padding-top: 100px;
 
     .ss{
-      div{
-        padding: 0 0 120px 0;
+      .info_container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 150px;
+
+        .title{
+          font-family: var(--bellefair--fnt);
+          font-size: 32px;
+          font-weight: 400;
+          color: var(--half-transparent--clr);
+        }
+        .name{
+          font-family: var(--bellefair--fnt);
+          font-size: 56px;
+          font-weight: 400;
+          color: var(--light--clr);
+          margin-top: 15px;
+        }
+        .bio{
+          font-family: var(--barlow--fnt);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          color: var(--fog--clr);
+          max-width: 445px;
+          margin-top: 27px;
+        }
       }
     }
 
@@ -28,7 +49,6 @@
   }
 
   .crew img{
-      width: 568px;
-      height: 712px;
+      height: 100%;
       margin: 0 auto;
   }

@@ -24,14 +24,15 @@ class Crew extends React.Component {
                     <Header />
                     <main className="crew">
                         <div className="ss">
-                            <div>
+                        <h2 className="subheading">
+                            <div>02</div>
+                            <div> MEET YOUR CREW</div>
+                            </h2>
+
+                            <div className="info_container">
                                 <div className="title">{this.state.data.title}</div>
                                 <div className="name">{this.state.data.name}</div>
                                 <div className="bio">{this.state.data.bio}</div>
-                                <div className="stats">
-                                    <div className="distance">{this.state.data.distance} {this.state.distanceUnit}</div>
-                                    <div className="travelTime">{this.state.data.travelTime}</div>
-                                </div>
                             </div>
                             <div onChange={this.onChangeValue} name='crew'>
                                 {crewData.map((plant, idx) =>

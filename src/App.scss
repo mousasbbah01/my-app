@@ -24,6 +24,12 @@ section{
   padding-top: 30px;
   height: calc(100vh - 30px);
 }
+.subheading{
+  font-family: var(--barlow-condensed--fnt);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--light--clr);
+}
 
 .container{
   width: 90%;

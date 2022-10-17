@@ -4,11 +4,15 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  .subheading{
+    margin-top: 50px;
+  }
 }
 main.destination{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-top: 100px;
 
 
   .planet_information{
