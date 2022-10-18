@@ -25,6 +25,8 @@ section{
   height: calc(100vh - 30px);
 }
 .subheading{
+  display: flex;
+  gap: 15px;
   font-family: var(--barlow-condensed--fnt);
   font-size: 28px;
   font-weight: 400;

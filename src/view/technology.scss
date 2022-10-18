@@ -1,7 +1,81 @@
-.technology_container { 
-    background-image: url('https://space-tourism-multi-page-solution.netlify.app/images/b7b589b3c0c5ef0811d4.jpg'); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.technology_container {
+  background-image: url('https://space-tourism-multi-page-solution.netlify.app/images/b7b589b3c0c5ef0811d4.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.tech{
+  padding-top: 100px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    gap:30px;
+    height: 100%;
+    padding-top: 150px;
+
+    .index {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 32px;
+      gap: 32px;
+
+      .num {
+        position: relative;
+        width: 80px;
+        aspect-ratio: 1/1;
+        background: transparent;
+        border: 1px solid var(--half-transparent--clr);
+        border-radius: 50%;
+        transition: .4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--bellefair--fnt);
+        font-size: 32px;
+        font-weight: 400;
+        color: var(--light--clr);
+
+      }
+      
+      .active {
+        background-color: aliceblue;
+        color: black;
+      }
+    }
+    .text {
+      .nav__text {
+        font-family: var(--barlow-condensed--fnt);
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--light--clr);
+      }
+      .term{
+        margin-top: 10px;
+        font-family: var(--bellefair--fnt);
+        font-size: 56px;
+        font-weight: 400;
+        color: var(--light--clr);
+      }
+      .definition{
+        max-width: 444px;
+        margin-top: 12px;
+        font-family: var(--barlow--fnt);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--fog--clr);
+      }
+    }
   }
+}

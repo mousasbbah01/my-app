@@ -22,7 +22,10 @@ class Destination extends React.Component {
             <div className="container">
 
             <Header />
-                <h2 className="subheading"> 01                     PICK YOUR DESTINATION </h2>
+            <h2 className="subheading">
+                            <div>01</div>
+                            <div> PICK YOUR DESTINATION</div>
+                            </h2>
             <main className="destination">
                 <div className="image_container">
 

@@ -7,13 +7,12 @@ class Crew extends React.Component {
 
     constructor(props) {
         super(props)
-        this.state = { data: crewData[0] };
+        this.state = { data: crewData[0], activeIndex:0 };
         this.onChangeValue = this.onChangeValue.bind(this);
     }
 
     onChangeValue(value) {
-        console.log(value.target.value);
-        this.setState({ data: crewData[value.target.value] })
+        this.setState({ data: crewData[value.target.value], activeIndex:Number(value.target.value) })
     }
 
     render() {
@@ -33,14 +32,13 @@ class Crew extends React.Component {
                                 <div className="title">{this.state.data.title}</div>
                                 <div className="name">{this.state.data.name}</div>
                                 <div className="bio">{this.state.data.bio}</div>
-                            </div>
-                            <div onChange={this.onChangeValue} name='crew'>
+                            <div className="dots_container" onChange={this.onChangeValue} name='crew'>
                                 {crewData.map((plant, idx) =>
-                                    <label>
-                                        {plant.name}
+                                    <label className={`dot${this.state.activeIndex === idx ? ' active' : ''}`}>
                                         <input type="radio" key={idx} value={idx} name="crew" hidden />
                                     </label>
                                 )}
+                            </div>
                             </div>
                         </div>
                         <div>
