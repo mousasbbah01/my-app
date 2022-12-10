@@ -1,31 +1,21 @@
-import React from 'react';
-import './App.scss';
-import Home from './view/home';
-import Destination from './view/destination';
-import Crew from './view/crew';
-import Technology from './view/technology';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-const images = ['images', 'i', 'b', 'c']
-class App extends React.Component {
+import "./App.css";
+import Home from "./home";
+import Movie from "./movie";
+import Header from "./header";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-  render() {
-    return <>
-      <BrowserRouter>
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Header />
         <Routes>
-          <Route element={<Home />} path="/" />
-          <Route element={<Destination />} path="/destination" />
-          <Route element={<Crew />} path="/crew" />
-          <Route element={<Technology />} path="/technology" />
+          <Route path="/" element={<Home />} />
+          <Route path="/movie/:id" element={<Movie />} />
         </Routes>
-      </BrowserRouter>
-
-    </>
-      ;
-  }
+      </Router>
+    </div>
+  );
 }
 
 export default App;

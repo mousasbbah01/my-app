@@ -1,0 +1,10 @@
+.Result {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.link {
+  text-decoration: none;
+}
